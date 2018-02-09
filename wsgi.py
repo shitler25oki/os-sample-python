@@ -4,8 +4,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    response = request.headers
-    return response
+    return 'headers: %s' % request.headers
 
 if __name__ == "__main__":
     application.run()
